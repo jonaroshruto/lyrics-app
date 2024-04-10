@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Songs</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Songs</h1>
+    <div class="song-list">
+        <ul>
+            <li th:each="song : ${songs}">
+                <div class="song-box">
+                    <div class="song-info">
+                        <h2 th:text="${song.songTitle}"></h2>
+                        <p th:text="${song.lyrics}"></p>
+                    </div>
+                    <div class="artist-info">
+                        <p>Artist: <span th:text="${song.artist.getArtistName()}"></span></p>
+                        <p th:if="${song.ftArtist!= null}">Featuring Artist: <span th:text="${song.ftArtist.getArtistName()}"></span></p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

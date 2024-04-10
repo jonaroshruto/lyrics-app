@@ -1,0 +1,37 @@
+.section-label {
+    -fx-font-size: 14pt;
+    -fx-text-fill: #0066cc; /* Dark blue */
+}
+
+.label {
+    -fx-font-size: 12pt;
+    -fx-text-fill: #0099ff; /* Light blue */
+}
+
+TextField {
+    -fx-border-color: #0099ff;
+    -fx-border-width: 1px;
+    -fx-background-color: white;
+    -fx-padding: 0.2em;
+}
+
+TextArea {
+    -fx-border-color: #0099ff;
+    -fx-border-width: 1px;
+    -fx-background-color: white;
+    -fx-padding: 0.2em;
+}
+
+Button {
+    -fx-font-size: 12pt;
+    -fx-text-fill: white;
+    -fx-background-color: #0099ff;
+    -fx-padding: 0.5em;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 0, 0);
+}
+
+Button:hover {
+    -fx-background-color: #0066cc;
+}

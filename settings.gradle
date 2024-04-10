@@ -8,4 +8,5 @@
  */
 
 rootProject.name = 'lyrics-app'
-include 'app'
+include 'spring-backend'
+include 'fx-frontend'

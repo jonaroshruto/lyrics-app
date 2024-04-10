@@ -1,7 +1,8 @@
-package lyrics.repository;
+package lyrics.app;
 
-import lyrics.model.Artist;
+import lyrics.app.Artist;
 import org.springframework.data.repository.CrudRepository;
 
 public interface ArtistRepository extends CrudRepository<Artist,Long> {
+
 }
